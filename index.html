@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Bid Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="search-wrap">
+          <label class="switch">
+            <input type="checkbox" checked id="bid-checked" />
+            <span class="slider round">BID</span>
+          </label>
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" placeholder="search..." />
+            <span class="search-cancel">&times;</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="bid-wrap"></div>
+          <div class="url-wrap">
+            <div class="btns">
+              <button id="copy-btn">Copy Selected</button>
+              <button id="unselect-btn">Unselect All</button>
+            </div>
+            <div class="url-block"></div>
+          </div>
+        </div>
+      </div>
+      <div id="copy-result">Copied</div>
+    </div>
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./bids.js"></script>
+    <script type="text/javascript" src="./urls.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
